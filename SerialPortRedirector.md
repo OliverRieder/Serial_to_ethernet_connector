@@ -1,0 +1,34 @@
+Serial Redirector Software
+Connect remote serial devices over a TCP/IP network.
+Some serial applications are designed to be compatible with specific COM ports only. Any attempt to use a port with a shared IRQ and /or I/O address with more than one device, or to use a port that is simply not compatible will result in a conflict and the device will simply not work. Serial Port Redirector overcomes these limitations by creating virtual COM ports on the local computer. The virtual serial port is configured to allow connection to a specific TCP/IP server. Once the specified virtual COM port is opened by communication software, a connection to the remote server is established.
+
+On the remote side, the serial device server converts your serial devices into Ethernet devices, giving them networking capabilities, thus allowing access through LAN, WAN or the Internet. Any computer that is on the network can be granted full access to devices that are plugged into the dedicated server.
+
+Serial Port Reditector is a software tool that allows the redirection of data from a serial port that is transmitted through an IP based network. With a user-friendly interface, it lets you use and manage up to 500 ports simultaneously. This dedicated application gives you three options:
+
+Create a server to share local serial ports for incoming connections. The server will listen for incoming client connections and share local real or virtual serial ports over Ethernet. The client can be any application that can initialize an outgoing connection to a TCP/IP server. A server connection allows multiple simultaneous client connections and each client can transmit data to a local or virtual serial port. Connect to a serial port of a remote host as a client. By specifying the remote server’s IP address and a TCP port, a client can connect to the remote serial device server using TCP/IP. Once a connection is made, the communications are broadcast over Ethernet. Use the User Datagram Protocol (UDP) to share the serial port. UDP can be used as a transport protocol to redirect I/O data from physical and virtual serial ports to the remote side.
+
+Serial over ethernet
+
+The primary function of COM Port Redirector is to create virtual serial ports and make them accessible to remote users. The application is compatible with all versions of the Windows operating system as well as many virtual environments, including but not limited to VMware, VMware ESX and Parallels Desktop, etc. Telnet’s RFC 2217 protocol is supported, so are multi-process systems and hyper-threading.
+
+Serial Port Redirector
+A virtual serial port redirector is software that not only creates a virtual COM port, it needs to ensure the virtual port behaves exactly as one would expect from a physical serial interface. It serves as the client for receiving access to remote serial devices. The actual action of creating a virtual serial port is a simple task, which can be undertaken by traditional software that configures physical COM port drivers. The challenge arises when networking the device server and actually trying to utilize it. These challenges are discussed below.
+
+A serial IP port redirector allows you to establish and configure a virtual COM port in order to forward serial communications. The IP port redirector is responsible for establishing a network connection to a remote device. This is achieved through the device’s IP address and TCP/UDP port number. Once the connection is successfully established, the serial port redirector software transmits the data stream between the device server and the virtual serial port.
+
+An IP port redirector typically allows for at least 256 virtual interfaces to be active at any time. However, having that many active connections running is not always practical and the performance of this is limited by factors such as hardware restrictions in terms of memory or processor power; the performance of the network and even operating system limitations. Serial IP redirector software generally includes the option of a graphical user interface (GUI). This may make it easier for some users to create and configure the virtual COM ports. The GUI may also include a useful diagnostic overview of the activity of various virtual ports.
+
+Virtual Serial Port Redirector
+A virtual serial port is a port that is simulated on a computer through software. A virtual port overcomes the shortcomings of hardware, where a physical port simply may not exist. This is especially useful for allowing legacy applications that rely on serial ports to communicate with one another. You can create multiple virtual serial ports on one computer, thus eliminating the need for additional means of communication, such as named pipes. Communicating through a virtual port also reduces the need for additional cables and hardware.
+
+Serial port redirection software allows the user to gain access to remote serial devices over TCP/IP network. This is achieved by emulating signal lines (DTR / DSR / CTS / RTS / DCD / RI). The pinout of the virtual port as well as all serial communication parameters including bits-per character (bpc), bits-per-second (bps), baud rate, parity, stop, start and mark bits can be configured as required.
+
+A complete client-server model can be created using virtual COM interfaces. This allows fast and reliable data sharing over multiple connections and over a variety of devices, including legacy ones that require outdated hardware port configurations. Thanks to the ability to split data streams, connections to virtual ports can occur synchronously.
+
+Open source alternative
+SerialToIP is a free, open-source solution that lets you communicate with any device that is connected to a serial port from the LAN or the Internet. This is achieved through a standard TCP Socket Connection. Built-in C#, this Terminal Server software offers users both a command-line interface and a graphical one. Using a TCP/IP connection, data can be sent or received through any serial ports, including USB.
+
+SerialToIp
+
+Due to its open-source nature, the code is freely available for user modification and redistribution. With knowledge of serial ports, socket and some .NET and C# coding experience, a developer can review and revise this application and customize it to their own specific requirements.
