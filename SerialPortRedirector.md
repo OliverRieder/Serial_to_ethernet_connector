@@ -8,7 +8,7 @@ On the remote side, the serial device server converts your serial devices into E
 
 Create a server to share local serial ports for incoming connections. The server will listen for incoming client connections and share local real or virtual serial ports over Ethernet. The client can be any application that can initialize an outgoing connection to a TCP/IP server. A server connection allows multiple simultaneous client connections and each client can transmit data to a local or virtual serial port. Connect to a serial port of a remote host as a client. By specifying the remote server’s IP address and a TCP port, a client can connect to the remote serial device server using TCP/IP. Once a connection is made, the communications are broadcast over Ethernet. Use the User Datagram Protocol (UDP) to share the serial port. UDP can be used as a transport protocol to redirect I/O data from physical and virtual serial ports to the remote side.
 
-Serial over ethernet
+<h2>Serial over ethernet</h2>
 
 The primary function of COM Port Redirector is to create virtual serial ports and make them accessible to remote users. The application is compatible with all versions of the Windows operating system as well as many virtual environments, including but not limited to VMware, VMware ESX and Parallels Desktop, etc. Telnet’s RFC 2217 protocol is supported, so are multi-process systems and hyper-threading.
 
@@ -19,16 +19,16 @@ A serial IP port redirector allows you to establish and configure a virtual COM 
 
 An IP port redirector typically allows for at least 256 virtual interfaces to be active at any time. However, having that many active connections running is not always practical and the performance of this is limited by factors such as hardware restrictions in terms of memory or processor power; the performance of the network and even operating system limitations. Serial IP redirector software generally includes the option of a graphical user interface (GUI). This may make it easier for some users to create and configure the virtual COM ports. The GUI may also include a useful diagnostic overview of the activity of various virtual ports.
 
-Virtual Serial Port Redirector
+<h2>Virtual Serial Port Redirector</h2>
 A virtual serial port is a port that is simulated on a computer through software. A virtual port overcomes the shortcomings of hardware, where a physical port simply may not exist. This is especially useful for allowing legacy applications that rely on serial ports to communicate with one another. You can create multiple virtual serial ports on one computer, thus eliminating the need for additional means of communication, such as named pipes. Communicating through a virtual port also reduces the need for additional cables and hardware.
 
 Serial port redirection software allows the user to gain access to remote serial devices over TCP/IP network. This is achieved by emulating signal lines (DTR / DSR / CTS / RTS / DCD / RI). The pinout of the virtual port as well as all serial communication parameters including bits-per character (bpc), bits-per-second (bps), baud rate, parity, stop, start and mark bits can be configured as required.
 
 A complete client-server model can be created using virtual COM interfaces. This allows fast and reliable data sharing over multiple connections and over a variety of devices, including legacy ones that require outdated hardware port configurations. Thanks to the ability to split data streams, connections to virtual ports can occur synchronously.
 
-Open source alternative
-SerialToIP is a free, open-source solution that lets you communicate with any device that is connected to a serial port from the LAN or the Internet. This is achieved through a standard TCP Socket Connection. Built-in C#, this Terminal Server software offers users both a command-line interface and a graphical one. Using a TCP/IP connection, data can be sent or received through any serial ports, including USB.
+<h2>Open source alternative</h2>
+<b>SerialToIP</b> is a free, open-source solution that lets you communicate with any device that is connected to a serial port from the LAN or the Internet. This is achieved through a standard TCP Socket Connection. Built-in C#, this Terminal Server software offers users both a command-line interface and a graphical one. Using a TCP/IP connection, data can be sent or received through any serial ports, including USB.
 
-SerialToIp
+<img src="https://camo.githubusercontent.com/d2f37b5c8212916b79ab8f5713150f2647eeeb5d/687474703a2f2f692e70696363792e696e666f2f69392f65666331376637323135393539373766393831633564363062373965613836352f313538333333313230372f34343736362f313336353831332f7365632e6a7067" alt="Serial over ethernet" data-canonical-src="http://i.piccy.info/i9/efc17f721595977f981c5d60b79ea865/1583331207/44766/1365813/sec.jpg">
 
 Due to its open-source nature, the code is freely available for user modification and redistribution. With knowledge of serial ports, socket and some .NET and C# coding experience, a developer can review and revise this application and customize it to their own specific requirements.
