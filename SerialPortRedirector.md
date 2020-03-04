@@ -1,5 +1,5 @@
 <h1>Serial Redirector Software</h1>
-<h2>Connect remote serial devices over a TCP/IP network.<h2><br>
+<h2>Connect remote serial devices over a TCP/IP network.</h2><br></br>
 Some serial applications are designed to be compatible with specific COM ports only. Any attempt to use a port with a shared IRQ and /or I/O address with more than one device, or to use a port that is simply not compatible will result in a conflict and the device will simply not work. Serial Port Redirector overcomes these limitations by creating virtual COM ports on the local computer. The virtual serial port is configured to allow connection to a specific TCP/IP server. Once the specified virtual COM port is opened by communication software, a connection to the remote server is established.
 
 On the remote side, the serial device server converts your serial devices into Ethernet devices, giving them networking capabilities, thus allowing access through LAN, WAN or the Internet. Any computer that is on the network can be granted full access to devices that are plugged into the dedicated server.
