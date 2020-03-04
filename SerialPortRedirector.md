@@ -28,7 +28,7 @@ Serial port redirection software allows the user to gain access to remote serial
 A complete client-server model can be created using virtual COM interfaces. This allows fast and reliable data sharing over multiple connections and over a variety of devices, including legacy ones that require outdated hardware port configurations. Thanks to the ability to split data streams, connections to virtual ports can occur synchronously.
 
 <h2>Open source alternative</h2>
-<b>SerialToIP</b> is a free, open-source solution that lets you communicate with any device that is connected to a serial port from the LAN or the Internet. This is achieved through a standard TCP Socket Connection. Built-in C#, this Terminal Server software offers users both a command-line interface and a graphical one. Using a TCP/IP connection, data can be sent or received through any serial ports, including USB.
+<b><a href="https://sourceforge.net/projects/serialtoip/">SerialToIP</a></b> is a free, open-source solution that lets you communicate with any device that is connected to a serial port from the LAN or the Internet. This is achieved through a standard TCP Socket Connection. Built-in C#, this Terminal Server software offers users both a command-line interface and a graphical one. Using a TCP/IP connection, data can be sent or received through any serial ports, including USB.
 
 <img src="https://camo.githubusercontent.com/0a63465b079b8570a98de99f663f2ec8501e1dd4/687474703a2f2f692e70696363792e696e666f2f69392f62626336616137623738666233393264383662663235666334663565336234332f313538333333303639322f33303531392f313336353831332f312e6a7067" alt="SerialToIp" data-canonical-src="http://i.piccy.info/i9/bbc6aa7b78fb392d86bf25fc4f5e3b43/1583330692/30519/1365813/1.jpg">
 
